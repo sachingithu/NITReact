@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-style{
+            border: 2px solid gray;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 2px 2px 2px black;
+        }
+    </style>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<Login/>)
+
+        function Login(){
+            return(
+                <form className='form-style'>
+                    <h2>Login</h2>
+                     <dl>
+                        <dt>UserName</dt>
+                        <dd><input type="text"/> </dd>
+                        <dt>Password</dt>
+                        <dd><input type="password"/> </dd>
+                    </dl>   
+                    <button>Login</button>
+                </form>
+            )
+        }
+    </script>
+    
+</head>
+<body>
+    <noscript>no javascript enables</noscript>
+    <div id="root"></div>
+</body>
+</html>
